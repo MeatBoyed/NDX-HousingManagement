@@ -341,8 +341,8 @@ export default function StudentProfile() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  {documents.map((document) => (
-                    <FileCard document={document} />
+                  {documents.map((document, index) => (
+                    <FileCard key={index} document={document} />
                   ))}
                 </div>
                 <Button className="mt-4 w-full">Upload New Document</Button>

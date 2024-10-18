@@ -77,24 +77,24 @@ export default function RootLayout({ children }: RootLayoutProps) {
           inter.className
         )}
       >
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        >
-          {/* <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8"> */}
-          <div className="flex h-screen bg-gray-50">
-            {/* <div className="flex w-full items-center justify-center"> */}
-            {/* <SideNavBar /> */}
-            {/* </div> */}
-            <main className="flex-1 overflow-y-auto overflow-x-hidden">
-              <Navbar />
-              {children}
-            </main>
-          </div>
-          <Toaster />
-        </ThemeProvider>
+        > */}
+        {/* <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8"> */}
+        <div className="flex h-screen bg-gray-50">
+          {/* <div className="flex w-full items-center justify-center"> */}
+          {/* <SideNavBar /> */}
+          {/* </div> */}
+          <main className="flex-1 overflow-y-auto overflow-x-hidden">
+            <Navbar />
+            {children}
+          </main>
+        </div>
+        <Toaster />
+        {/* </ThemeProvider> */}
       </body>
     </html>
   )
